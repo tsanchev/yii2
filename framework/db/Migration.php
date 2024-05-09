@@ -275,7 +275,7 @@ class Migration extends Component implements MigrationInterface
      * Creates and executes an UPDATE SQL statement.
      * The method will properly escape the column names and bind the values to be updated.
      * @param string $table the table to be updated.
-     * @param array $columns the column data (name => value) to be updated.
+     * @param array|\yii\db\Query $columns the column data (name => value) to be updated.
      * @param array|string $condition the conditions that will be put in the WHERE part. Please
      * refer to [[Query::where()]] on how to specify conditions.
      * @param array $params the parameters to be bound to the query.
